@@ -1,0 +1,51 @@
+let mapleader = " "
+
+
+set incsearch
+
+map Q gq
+
+Plug 'machakann/vim-highlightedyank'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
+
+set number
+set relativenumber
+set hlsearch
+
+map gl <Action>(ShowErrorDescription)
+map gi <Action>(GotoImplementation)
+map ]d <Action>(GotoNextError)
+map [d <Action>(GotoPreviousError)
+map <leader>cc <Action>(CollapseRegion)
+map <leader>fi <Action>(FindInPath)
+map <leader>fc <Action>(GotoFile)
+map <leader>id <Action>(AutoIndentLines)
+map <leader>o <Action>(OptimizeImports)
+map <leader>y \"+y
+map <leader>p \"+p
+nnoremap <leader>h :noh<CR>
+map <leader>rn <Action>(RenameElement)
+
+
+nnoremap vv <C-w>v
+nnoremap ss <C-w>s
+
+nnoremap <C-l> <C-w>l
+nnoremap <C-k> <C-w>k
+nnoremap <C-j> <C-w>j
+nnoremap <C-h> <C-w>h
+
+nnoremap <A-q> :bd<CR>
+
+map <leader>sb <Action>(Debug)
+map <leader>sa <Action>(Run)
+
+map <leader>bp <Action>(ToggleLineBreakpoint)
+
+nnoremap <A-,> gT
+nnoremap <A-.> gt
+
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
