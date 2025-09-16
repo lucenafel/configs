@@ -1,6 +1,5 @@
 let mapleader = " "
 
-
 set incsearch
 
 map Q gq
@@ -27,7 +26,6 @@ map <leader>y \"+y
 map <leader>p \"+p
 nnoremap <leader>h :noh<CR>
 map <leader>rn <Action>(RenameElement)
-
 
 nnoremap vv <C-w>v
 nnoremap ss <C-w>s
